@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}{{ page_title }} · HelpDesk Lite{% endblock %}{% block content %}<div class="form-card"><h1>{{ page_title }}</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="button">Speichern</button> <a class="button secondary" href="{% url 'ticket_list' %}">Abbrechen</a></form></div>{% endblock %}
